@@ -31,7 +31,7 @@ To configure the Elasticsearch search engine indices:
 
 4. Specify values for the following properties:
 
-| Property   | Value  |
+| Property | Value |
 | ---------- | ------- |
 | `<JdbcDriverLibrary>` | For Microsoft SQL Server, set to `sqljdbc42.jar`<br>For Oracle, set to `ojdbc7.jar` |
 | `<JdbcDriverClass>` | For Microsoft SQL Server, set to `com.microsoft.sqlserver.jdbc.SQLServerDriver`<br>For Oracle, set to `Java::oracle.jdbc.driver.OracleDriver` |

@@ -7,5 +7,8 @@
   "MD007": false,    // This is temporary until I configure it to use 4 spaces for indentation rather than 2
   "MD026": {
       "punctuation": ".,;:。，；：" // Allow exclamation marks at end of headings
+  },
+  "MD060": {
+    "style": "consistent"
   } 
 }
