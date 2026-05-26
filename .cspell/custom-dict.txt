@@ -18,3 +18,8 @@ sqljdbc
 ojdbc
 Zconnect
 inhouse
+helpdesk
+dialog
+MSMQ
+msmq
+dialog
