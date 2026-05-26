@@ -21,7 +21,6 @@ Set the following value:
 -Duser.timezone=UTC
 ```
 
-
 ### If using Oracle
 
 Set the following value:
@@ -32,7 +31,7 @@ Set the following value:
 
 ## 2. Download and extract Logstash
 
-1. Download the archive `logstash-7.3.1.zip` from: 
+1. Download the archive `logstash-7.3.1.zip` from:
    [https://www.elastic.co/downloads/past-releases/logstash-7-3-1](https://www.elastic.co/downloads/past-releases/logstash-7-3-1)
 
 2. Right-click `logstash-7.3.1.zip` and select **7-Zip > Extract Files…**, then extract to `C:\`.

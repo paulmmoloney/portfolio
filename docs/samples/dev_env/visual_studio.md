@@ -16,7 +16,7 @@ This topic describes how to configure the required .NET Framework Tools for Visu
 
    ![Visual Studio - Individual Components Tab](Images/viz_studio_ind_comps.png){ .figure }
 
-   *Visual Studio - Individual Components Tab*{ .figure-caption }
+   *Visual Studio - Individual Components Tab*
 
 5. Click **Modify**.
 
