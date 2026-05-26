@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
   - samples
 ---
 
@@ -14,7 +14,4 @@ This portfolio site itself is an example of my work. It was created in [Markdown
      - [`markdownlint-cli`](https://github.com/igorshubovych/markdownlint-cli) verifies Markdown formatting and style.
      - [`cspell`](https://cspell.org) checks for spelling mistakes.
      - [`LanguageTool`](https://github.com/languagetool-org/languagetool) checks for incorrect grammar.
-- Once built, the site is automatically published to [GitHub Pages](https://docs.github.com/en/pages). 
- 
-
- 
+- Once built, the site is automatically published to [GitHub Pages](https://docs.github.com/en/pages).

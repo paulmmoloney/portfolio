@@ -60,7 +60,7 @@ Minimum requirement:
 
 Only required if using Oracle:
 
-https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.htm
+[https://www.oracle.com/technetwork/database/enterprise-edition/downloads](https://www.oracle.com/technetwork/database/enterprise-edition/downloads)
 
 #### SQL Server Management Studio 17.7
 
@@ -108,17 +108,17 @@ This topic describes how to ensure the relevant Windows features are installed.
     - Windows Features – MSMQ
 
 <figure markdown>
-  <img src ="images/win_feat_net.png" width="400" />
+  <img src ="images/win_feat_net.png" alt="Windows Features - .NET Framework" width="400" />
   <figcaption>Windows Features - .NET Framework</figcaption>
 </figure>
 
 <figure markdown>
-   <img src ="images/win_feat_wmt.png" width="400" />
+   <img src ="images/win_feat_wmt.png" alt="Windows Features - Web Management Tools" width="400" />
   <figcaption>Windows Features - Web Management Tools</figcaption>
 </figure>
 
 <figure markdown>
-   <img src ="images/win_feat_msmq.png" width="400" />
+   <img src ="images/win_feat_msmq.png" alt="Windows Features - MSMQ" width="400" />
   <figcaption>Windows Features - MSMQ</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ This topic describes how to ensure the relevant Windows features are installed.
 PowerShell is installed by default. Ensure that the full path to PowerShell (by default `%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\`) is added to the system variable `Path`.
 
 <figure markdown>
-   <img src ="images/powershell_env_var.png" width="400" />
+   <img src ="images/powershell_env_var.png" alt="PowerShell Path in Path Environment Variable" width="400" />
   <figcaption>PowerShell Path in Path Environment Variable</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ PowerShell is installed by default. Ensure that the full path to PowerShell (by 
 
 2. Run the following command:
 
-    ```
+    ```bash
     c:\windows\syswow64\WindowsPowerShell\v1.0\powershell.exe -command set-executionpolicy unrestricted
     ```
 
@@ -148,8 +148,8 @@ This topic describes how to configure the required environment variables for a l
 1. Select **Start > Control Panel > System Properties > Environment Variables.**
 2. In the **System variables** text box, ensure that the following system environment variables have been configured:
 
-    | Environment Variable | Value |
-    |---------------------|-------|
+    | Environment Variable | Value    |
+    | --------------------- | ------- |
     | JAVA_HOME | The location where Java JRE is installed; for example: `C:\Program Files\Java\jre1.8.0_144` |
     | ORACLE_HOME | The location where the Oracle database file is located. |
     | Path | See *[Path Environment Variable](#path-environment-variable)* |
@@ -162,13 +162,13 @@ To ensure the Path environment variable is configured correctly:
 2. Click the **Edit** button.
    The **Edit Environment Variable** dialog box is displayed:
     <figure markdown>
-      <img src ="Images/edit_path_env_var.png" width="400" />
+      <img src ="Images/edit_path_env_var.png" alt="Edit Environment Variable - Path" width="400" />
       <figcaption>Edit Environment Variable - Path</figcaption>
     </figure>
 3. Ensure the following paths are added to the list:
 
     | Value | Description |
-    |-------|-------------|
+    | ------- | ------------- |
     | `%ORACLE_HOME%\bin` | The Oracle database bin directory |
     | `c:\windows\system32\OracleClient` | The Oracle client directory |
     | `C:\Windows` | The Windows directory |

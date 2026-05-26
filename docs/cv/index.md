@@ -3,7 +3,7 @@ tags:
   - cv
 ---
 
-[Download PDF Version ](cvs/Paul_Moloney_CV.PDF){ .md-button .md-button--primary } [Download Word (.docx) Version](cvs/Paul_Moloney_CV.docx){ .md-button .md-button--primary }
+[Download PDF Version](cvs/Paul_Moloney_CV.PDF){ .md-button .md-button--primary } [Download Word (.docx) Version](cvs/Paul_Moloney_CV.docx){ .md-button .md-button--primary }
 
 # Summary
 
