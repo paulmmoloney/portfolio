@@ -9,5 +9,9 @@
   "words": [
     "MkDocs",
     "Zensical"
+  ],
+  "ignoreRegExpList": [
+    "/```[\\s\\S]*?```/g",
+    "/`[^`]*`/g"
   ]
 }
