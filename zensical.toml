@@ -367,7 +367,9 @@ permalink = true
 # ----------------------------------------------------------------------------
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/paulmmoloney/defendersofelturel"
+link = "https://github.com/paulmmoloney/portfolio"
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/paulmichaelmoloney"
 
 [project.extra.analytics]
 provider = "google"
