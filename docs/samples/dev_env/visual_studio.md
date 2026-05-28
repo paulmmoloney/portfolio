@@ -13,7 +13,7 @@ This topic describes how to configure the required .NET Framework Tools for Visu
 3. Click the **Individual Components** tab.
 
 4. Ensure all .NET Framework tools are selected as shown below:
-   
+
    <figure markdown>
      <img src ="Images/viz_studio_ind_comps.png" alt="Visual Studio - Individual Components Tab" width="400" />
      <figcaption>Visual Studio - Individual Components Tab</figcaption>
@@ -28,7 +28,7 @@ This topic describes how to configure the required .NET Framework Tools for Visu
 7. Click the **Connect** button.
 
    The following menu is displayed:
-   
+
    <figure markdown>
      <img src ="Images/vizstu_teamexp_connect.png" alt="Visual Studio - Team Explorer - Connect Menu" width="400" />
      <figcaption>Visual Studio - Team Explorer - Connect Menu</figcaption>

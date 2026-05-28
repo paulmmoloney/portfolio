@@ -11,12 +11,12 @@ To install Logstash on Windows:
 
 2. Set `LS_JAVA_OPTS` to the following value:
 
-    - If using Microsoft SQL Server: `-Duser.timezone=UTC` 
+    - If using Microsoft SQL Server: `-Duser.timezone=UTC`
     - If using Oracle: `-Doracle.net.tns_admin=C:\OracleService\product[Version][db_path]\NETWORK\ADMIN -Duser.timezone=UTC`
 
-4. Download the archive `logstash-7.3.1.zip` from:
+3. Download the archive `logstash-7.3.1.zip` from:
    [https://www.elastic.co/downloads/past-releases/logstash-7-3-1](https://www.elastic.co/downloads/past-releases/logstash-7-3-1)
 
-5. Right-click `logstash-7.3.1.zip` and select **7-Zip > Extract Files…**, then extract to `C:\`.
+4. Right-click `logstash-7.3.1.zip` and select **7-Zip > Extract Files…**, then extract to `C:\`.
 
 After this, you should have a folder at `C:\logstash-7.3.1`.
