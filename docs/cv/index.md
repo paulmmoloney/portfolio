@@ -5,7 +5,7 @@ tags:
 
 [Download PDF Version](cvs/Paul_Moloney_CV.PDF){ .md-button .md-button--primary } [Download Word (.docx) Version](cvs/Paul_Moloney_CV.docx){ .md-button .md-button--primary }
 
-# Summary
+## Summary
 
 - 30+ years in technical writing for companies in telecommunications,
   financial services, e-commerce, and blockchain, including 10+ years
@@ -25,9 +25,9 @@ tags:
   generators (Hugo/MkDocs/Zensical), MadCap Flare, API documentation,
   structured authoring (DITA/DocBook), CI/CD pipelines (DocOps).
 
-# Professional Experience
+## Professional Experience
 
-## R3 \| Senior Technical Writer Aug 2022 to Jan 2026
+### R3 \| Senior Technical Writer Aug 2022 to Jan 2026
 
 [www.r3.com](http://www.r3.com)
 
@@ -59,7 +59,7 @@ As Senior Technical Writer, I:
 - Provided other departments with documentation governance: for example,
   produced Word templates, and reviewed and edited material.
 
-## Fenergo \| Technical Writer May 2018 to Jul 2022
+### Fenergo \| Technical Writer May 2018 to Jul 2022
 
 [www.fenergo.com](https://www.fenergo.com)
 
@@ -82,7 +82,7 @@ As a Technical Writer, I:
   guides, API guides, and release notes, working in an Agile
   environment.
 
-## BAE Systems Applied Intelligence \| Documentation Group Lead Jul 2007 to May 2018
+### BAE Systems Applied Intelligence \| Documentation Group Lead Jul 2007 to May 2018
 
 [BAE Systems Digital Intelligence](https://www.baesystems.com/en-uk/uk-businesses/digital-intelligence)
 
@@ -112,7 +112,7 @@ As Documentation Group Lead, I:
   produced in-house Word templates for internal and external
   documentation, and reviewed and edited material.
 
-## Valista \| Documentation Team Lead Nov 2001 to Jul 2007
+### Valista \| Documentation Team Lead Nov 2001 to Jul 2007
 
 Valista was a winner of GSM World awards, producing payment applications
 for customers including AOL, Vodafone, NTT Docomo, O~2~, Taito
@@ -132,50 +132,50 @@ As Documentation Team Lead, I:
 - Produced in-house templates for internal and external documentation,
   and created stylesheets for our Javadoc developer references.
 
-# Early Career Summary
+## Early Career Summary
 
-## Sepro Telecom International \| Technical Writer 1997 to 2001
+### Sepro Telecom International \| Technical Writer 1997 to 2001
 
 Online help, ForeHelp, API documentation, Intranet
 
-## Accuris \| Technical Writer 1997 to 1997
+### Accuris \| Technical Writer 1997 to 1997
 
 Microsoft Word, Microsoft Help Workshop
 
-## Telecom Ireland Software \| Technical Writer 1994 to 1997
+### Telecom Ireland Software \| Technical Writer 1994 to 1997
 
 Microsoft Word, Adobe FrameMaker, RoboHelp
 
-# Skills
+## Skills
 
-## Static Site Generators
+### Static Site Generators
 
 Hugo, MkDocs, Jekyll, Material for MkDocs, Zensical
 
-## Authoring Tools
+### Authoring Tools
 
 MadCap Flare, MadCap Central, MadCap Analyzer, Confluence, DITA,
 Microsoft Word, Asciidoctor, XMLMind Editor, Docutils, Sphinx, Oxygen
 Editor, DocBook XSL, Typora, RoboHelp, Adobe FrameMaker
 
-## Version Control and Issue Tracking
+### Version Control and Issue Tracking
 
 Git, GitHub, Azure, Jira, SVN (Subversion)
 
-## Graphical Tools
+### Graphical Tools
 
 Photoshop, Visio, Lucidchart
 
-## Programming and Standards
+### Programming and Standards
 
 Markdown, DITA, DocBook, Java, Microsoft Word Visual Basic, Perl, HTML,
 XML, SQL, YAML, JSON
 
-## Operating Systems
+### Operating Systems
 
 Windows, Linux
 
-# Education and Professional Development (Selected)
+## Education and Professional Development (Selected)
 
 - B.A. (Mod) in Computer Science: Trinity College Dublin
 - Technical Authoring Training Programme (Intro/Intermediate/Advanced):
