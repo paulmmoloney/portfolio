@@ -107,29 +107,17 @@ This topic describes how to ensure the relevant Windows features are installed.
     - Windows Features – Web Management Tools
     - Windows Features – MSMQ
 
-<figure markdown>
-  <img src ="images/win_feat_net.png" alt="Windows Features - .NET Framework" width="400" />
-  <figcaption>Windows Features - .NET Framework</figcaption>
-</figure>
+![Windows Features - .NET Framework](images/win_feat_net.png){ width="800" }
 
-<figure markdown>
-   <img src ="images/win_feat_wmt.png" alt="Windows Features - Web Management Tools" width="400" />
-  <figcaption>Windows Features - Web Management Tools</figcaption>
-</figure>
+![Windows Features - Web Management Tools](images/win_feat_wmt.png){ width="800" }
 
-<figure markdown>
-   <img src ="images/win_feat_msmq.png" alt="Windows Features - MSMQ" width="400" />
-  <figcaption>Windows Features - MSMQ</figcaption>
-</figure>
+![Windows Features - MSMQ](images/win_feat_msmq.png){ width="800" }
 
 ## Configure PowerShell
 
 PowerShell is installed by default. Ensure that the full path to PowerShell (by default `%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\`) is added to the system variable `Path`.
 
-<figure markdown>
-   <img src ="images/powershell_env_var.png" alt="PowerShell Path in Path Environment Variable" width="400" />
-  <figcaption>PowerShell Path in Path Environment Variable</figcaption>
-</figure>
+![PowerShell Path in Path Environment Variable](images/powershell_env_var.png){ width="800" }
 
 ### Configure PowerShell execution policy
 
@@ -161,10 +149,9 @@ To ensure the Path environment variable is configured correctly:
 1. In the **System Variables** text box, click the **Path** variable.
 2. Click the **Edit** button.
    The **Edit Environment Variable** dialog box is displayed:
-    <figure markdown>
-      <img src ="Images/edit_path_env_var.png" alt="Edit Environment Variable - Path" width="400" />
-      <figcaption>Edit Environment Variable - Path</figcaption>
-    </figure>
+
+    ![Edit Environment Variable - Path](images/edit_path_env_var.png){ width="800" }
+
 3. Ensure the following paths are added to the list:
 
     | Value | Description |
