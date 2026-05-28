@@ -25,10 +25,9 @@ The execution of the script in *Install Elasticsearch from Script File on Window
 
 1. From the **Start** menu, run **Services**.
 2. Check that Elasticsearch exists as a service:
-    <figure markdown>
-      <img src="images/es_service.png" alt="Elasticsearch Service" width="800" />
-      <figcaption>Elasticsearch Service</figcaption>
-    </figure>
+
+    ![Elasticsearch Service](images/es_service.pn){ width="800" }
+
 3. Right-click on the service and select **Properties**.
 4. Ensure that:
     - **Startup Type** is set to **Automatic**
