@@ -4,7 +4,7 @@ This topic describes how to configure the required .NET Framework Tools for Visu
 
 ## Procedure
 
-1. Open Visual Studio in **Administrator Mode**.
+1. Open Visual Studio in Administrator Mode.
 
 2. Select **Tools > Get Tools and Features...**
 
@@ -13,10 +13,11 @@ This topic describes how to configure the required .NET Framework Tools for Visu
 3. Click the **Individual Components** tab.
 
 4. Ensure all .NET Framework tools are selected as shown below:
-
-   ![Visual Studio - Individual Components Tab](Images/viz_studio_ind_comps.png){ .figure }
-
-   *Visual Studio - Individual Components Tab*
+   
+   <figure markdown>
+     <img src ="Images/viz_studio_ind_comps.png" alt="Visual Studio - Individual Components Tab" width="400" />
+     <figcaption>Visual Studio - Individual Components Tab</figcaption>
+   </figure>
 
 5. Click **Modify**.
 
@@ -27,10 +28,11 @@ This topic describes how to configure the required .NET Framework Tools for Visu
 7. Click the **Connect** button.
 
    The following menu is displayed:
-
-   ![Visual Studio - Team Explorer - Connect Menu](Images/vizstu_teamexp_connect.png){ .figure }
-
-   *Visual Studio - Team Explorer - Connect Menu*{ .figure-caption }
+   
+   <figure markdown>
+     <img src ="Images/vizstu_teamexp_connect.png" alt="Visual Studio - Team Explorer - Connect Menu" width="400" />
+     <figcaption>Visual Studio - Team Explorer - Connect Menu</figcaption>
+   </figure>
 
 8. Select **Source Control Explorer**.
 

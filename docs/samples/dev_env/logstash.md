@@ -2,38 +2,21 @@
 
 Logstash is a data loader which can pull data from several sources and push that data into an Elasticsearch index.
 
-## Install Logstash from ZIP File on Windows
-
 To install Logstash on Windows:
 
-## 1. Define the LS_JAVA_OPTS environment variable
+1. Define the `LS_JAVA_OPTS` environment variable required by Logstash:
 
-Define the `LS_JAVA_OPTS` environment variable required by Logstash:
+    - Select **Start > Control Panel > System Properties > Environment Variables**.
+    - In the **System Variables** pane, click **New** and add a new variable named `LS_JAVA_OPTS`.
 
-1. Select **Start > Control Panel > System Properties > Environment Variables**.
-2. In the **System Variables** pane, click **New** and add a new variable named `LS_JAVA_OPTS`.
+2. Set `LS_JAVA_OPTS` to the following value:
 
-### If using Microsoft SQL Server
+    - If using Microsoft SQL Server: `-Duser.timezone=UTC` 
+    - If using Oracle: `-Doracle.net.tns_admin=C:\OracleService\product[Version][db_path]\NETWORK\ADMIN -Duser.timezone=UTC`
 
-Set the following value:
-
-```bash
--Duser.timezone=UTC
-```
-
-### If using Oracle
-
-Set the following value:
-
-```bash
--Doracle.net.tns_admin=C:\OracleService\product[Version][db_path]\NETWORK\ADMIN -Duser.timezone=UTC
-```
-
-## 2. Download and extract Logstash
-
-1. Download the archive `logstash-7.3.1.zip` from:
+4. Download the archive `logstash-7.3.1.zip` from:
    [https://www.elastic.co/downloads/past-releases/logstash-7-3-1](https://www.elastic.co/downloads/past-releases/logstash-7-3-1)
 
-2. Right-click `logstash-7.3.1.zip` and select **7-Zip > Extract Files…**, then extract to `C:\`.
+5. Right-click `logstash-7.3.1.zip` and select **7-Zip > Extract Files…**, then extract to `C:\`.
 
 After this, you should have a folder at `C:\logstash-7.3.1`.

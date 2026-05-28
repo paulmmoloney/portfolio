@@ -57,15 +57,19 @@ nav = [
   { "Samples" = [
     { "Samples" = "samples/index.md" },
     { "Sample - Developer Environment Setup" = [
-      { "Sample - Developer Environment Setup" = "samples/dev_env/index.md" },
+      { "Overview" = "samples/dev_env/index.md" },
       { "Prequisites" = "samples/dev_env/prerequisites.md" },
-	    { "Installing & Configuring Elasticsearch" = "samples/dev_env/elasticsearch.md" },
-	    { "Installing Logstash" = "samples/dev_env/logstash.md" },
-	    { "Configuring Visual Studio .NET Framework Tools" = "samples/dev_env/visual_studio.md" }
+      { "Installing & Configuring Elasticsearch" = "samples/dev_env/elasticsearch.md" },
+      { "Installing Logstash" = "samples/dev_env/logstash.md" },
+      { "Configuring Visual Studio .NET Framework Tools" = "samples/dev_env/visual_studio.md" }
 	  ]},
-    { "Sample - Portfolio" = "samples/portfolio/index.md" },
-    { "Sample - Word Template" = "samples/word-template/index.md" }
-   ]},
+    { "Sample - Portfolio" = [
+      { "Overview" = "samples/portfolio/index.md" }
+    ]},
+    { "Sample - Word Template" = [
+      { "Overview" = "samples/word-template/index.md" }
+    ]},
+  ]},
 ]
 
 # Removed links.md file for now.
