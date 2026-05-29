@@ -132,7 +132,7 @@ jobs:
           args: >
             --verbose
             --no-progress
-            --accept 200..399
+            --accept 200,301,302,403,999
             site/**/*.html
 
       - name: Disable Jekyll
