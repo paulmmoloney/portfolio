@@ -19,7 +19,7 @@ I used for Hugo for over three years when updating enterprise and open source do
 
 ### Material for MkDocs
 
-:simple-homepage: [https://squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material)
+:simple-homepage: [https://squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
 
 :simple-github: [https://github.com/squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 
@@ -31,7 +31,7 @@ Material for MkDocs is an open source documentation framework based on [MkDocs](
 
 :simple-github: [https://github.com/zensical/zensical](https://github.com/zensical/zensical)
 
-As of May 2026, Zensical is only at version 0.0.38. But it is sufficiently fully featured that I used it for [this portfolio site](index.md).
+As of May 2026, Zensical is only at version 0.0.38. But it is sufficiently fully featured that I used it for this portfolio site.
 
 ## Documentation Tools
 

@@ -31,7 +31,7 @@ tags:
 
 ### R3 \| Senior Technical Writer Aug 2022 to Jan 2026
 
-[www.r3.com](http://www.r3.com)
+[www.r3.com](https://www.r3.com)
 
 R3 is a leading provider of digital currency, digital assets, and
 interoperability solutions using blockchain technology.
