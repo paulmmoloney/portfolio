@@ -19,7 +19,7 @@ I used for Hugo for over three years when updating enterprise and open source do
 
 ### Material for MkDocs
 
-:simple-homepage: [https://squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material)
+:simple-homepage: [https://squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
 
 :simple-github: [https://github.com/squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 
