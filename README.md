@@ -11,3 +11,5 @@ This portfolio site was created in [Markdown](https://en.wikipedia.org/wiki/Mark
      - [`LanguageTool`](https://github.com/languagetool-org/languagetool) checks for incorrect grammar.
      - [`lychee`](https://github.com/lycheeverse/lychee) checks for internal and external invalid links.
 - Once built, the site is automatically published to [GitHub Pages](https://docs.github.com/en/pages).
+
+If you'd like to get in touch, you can find me on [LinkedIn](https://www.linkedin.com/in/paulmichaelmoloney/).
