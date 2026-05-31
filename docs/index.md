@@ -4,6 +4,13 @@ hide:
     - toc
 ---
 
+<div class="hero-banner">
+    <img src="/assets/images/banner.jpg">
+    <div class="hero-banner-title">
+        Technical Writer
+    </div>
+</div>
+
 # Paul Moloney: Documentation Lead
 
 ![Profile photo](profilepic.jpg){ width="200" align=left }
@@ -36,11 +43,5 @@ Welcome to my portfolio site. Here I collect some of my writing samples from my 
 
     [:octicons-arrow-right-24: LinkedIn](https://www.linkedin.com/in/paulmichaelmoloney/)
 
-<!--
-- :octicons-people-24:{ .lg .middle } **Useful links**
-
-    Some links that may be of use to others in the technical writing domain.
-
-    [:octicons-arrow-right-24: Useful links](links.md)
--->
+ 
 </div>
