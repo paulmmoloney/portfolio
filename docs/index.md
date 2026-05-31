@@ -43,5 +43,4 @@ Welcome to my portfolio site. Here I collect some of my writing samples from my 
 
     [:octicons-arrow-right-24: LinkedIn](https://www.linkedin.com/in/paulmichaelmoloney/)
 
- 
 </div>
