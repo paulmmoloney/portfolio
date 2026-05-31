@@ -4,7 +4,7 @@ tags:
   - Microsoft Word
 ---
 
-# Microsoft Word
+# Microsoft Word Template
 
 Microsoft Word has been around since 1983, and it's unlikely to ever go away. I have probably used it every job I've had: rarely for producing user documentation (it's really not a good choice) but usually when helping out other client-facing teams such as sales engineering, client engagement, or pre-sales. I've migrated documentation _from_ Microsoft Word to other documentation systems such as MadCap Flare, and I think it's good for any technical writer to have at least an intermediate level of knowledge of Word.
 

@@ -6,15 +6,15 @@ This topic describes how to install and configure Elasticsearch, then configure 
 
 1. Inside your TFS branch directory, navigate to the Elasticsearch directory.
 2. Open a PowerShell or a command line window with Administrator privileges.
-3. Run the script *downloadAndInstall-windows.bat*.
+3. Run the script `downloadAndInstall-windows.bat`.
 
 This script will automatically perform the following actions:
 
 1. Download the archive for Elasticsearch 7.3.1 from online.
-2. Unzip the archive into the local directory *C:\elasticsearch-7.3.1*.
-3. Apply the required configurations to the file *C:\elasticsearch-7.3.1\config\elasticsearch.yml*.
+2. Unzip the archive into the local directory `C:\elasticsearch-7.3.1`.
+3. Apply the required configurations to the file `C:\elasticsearch-7.3.1\config\elasticsearch.yml`.
 4. Add the required user roles.
-5. Install the required SSL certificates inside the folder *C:\elasticsearch-7.3.1\config\cert*.
+5. Install the required SSL certificates inside the folder `C:\elasticsearch-7.3.1\config\cert`.
 6. Configure the Elasticsearch Windows service to run automatically on start-up.
 
 ## Start Elasticsearch as a Service on Windows
@@ -26,7 +26,10 @@ The execution of the script in *Install Elasticsearch from Script File on Window
 1. From the **Start** menu, run **Services**.
 2. Check that Elasticsearch exists as a service:
 
-    ![Elasticsearch Service](images/es_service.pn){ width="800" }
+    ![Elasticsearch Service](images/es_service.png){ width="800" }
+    /// caption
+    Elasticsearch Service
+    ///
 
 3. Right-click on the service and select **Properties**.
 4. Ensure that:
@@ -38,7 +41,7 @@ The execution of the script in *Install Elasticsearch from Script File on Window
 To configure the Elasticsearch search engine indices:
 
 1. Navigate to `{developer_home}\PSSolution\CLM\Elasticsearch`.
-2. In a text editor, edit *ConfigureElasticSearchIndices.config*.
+2. In a text editor, edit `ConfigureElasticSearchIndices.config`.
 3. Specify values for the following properties:
 
 | Property | Value |

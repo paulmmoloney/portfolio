@@ -56,18 +56,21 @@ nav = [
   { "Skills" = "skills/index.md" },
   { "Samples" = [
     { "Samples" = "samples/index.md" },
-    { "Sample - Internal Developer Guide" = [
+    { "Internal Developer Guide" = [
       { "Overview" = "samples/dev_env/index.md" },
-      { "Prequisites" = "samples/dev_env/prerequisites.md" },
+      { "Requirements" = "samples/dev_env/requirements.md" },
+      { "Installing Required Windows Features" = "samples/dev_env/installing-windows-features.md" },
+      { "Configuring PowerShell" = "samples/dev_env/configuring-powershell.md" },
       { "Installing & Configuring Elasticsearch" = "samples/dev_env/elasticsearch.md" },
       { "Installing Logstash" = "samples/dev_env/logstash.md" },
-      { "Configuring Visual Studio .NET Framework Tools" = "samples/dev_env/visual_studio.md" }
+      { "Configuring Visual Studio .NET Framework Tools" = "samples/dev_env/visual_studio.md" },
+      { "Configuring Environment Variables" = "samples/dev_env/configuring-env-variables.md"}
 	  ]},
-    { "Sample - Portfolio" = [
-      { "Overview" = "samples/portfolio/index.md" }
+    { "Portfolio Site" = [
+      { "Portfolio Site" = "samples/portfolio/index.md" }
     ]},
-    { "Sample - Word Template" = [
-      { "Overview" = "samples/word-template/index.md" }
+    { "Microsoft Word Template" = [
+      { "Microsoft Word Template" = "samples/word-template/index.md" }
     ]},
   ]},
 ]
