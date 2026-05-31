@@ -5,7 +5,7 @@ hide:
 ---
 
 <div class="hero-banner">
-    <img src="/assets/images/banner.jpg">
+    <img alt="Banner" src="/assets/images/banner.jpg">
     <div class="hero-banner-title">
         Technical Writer
     </div>
