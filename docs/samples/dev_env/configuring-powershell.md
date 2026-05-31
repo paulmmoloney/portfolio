@@ -1,4 +1,4 @@
-# Configure PowerShell
+# Configuring PowerShell
 
 PowerShell is installed by default. Ensure that the full path to PowerShell (by default `%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\`) is added to the system variable `Path`.
 
