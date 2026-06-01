@@ -22,7 +22,7 @@ Corda Enterprise targets the flow thread pools directly when it starts a
 flow. Therefore, there is no conflict between starting flows if one pool
 is performing badly and has a big queue.
 
-## Configuring thread pools 
+## Configuring thread pools
 
 Thread pools are defined in the node configuration by adding an
 additionalFlowThreadPools array within the tuning object. The
@@ -31,7 +31,7 @@ specifying the details of an additional thread pool. Each object
 contains a threadpool and size property, respectively defining the name
 of the thread pool and its size in number of threads.
 
-### Example 1: Two defined thread pools 
+### Example 1: Two defined thread pools
 
 The following sample configuration defines two thread pools based on the
 example above, reporting and transactions, each with three available
@@ -75,7 +75,7 @@ class MyTransactionFlow(private val party: Party) :
 }
 ```
 
-### Example 2: One defined thread pool and default thread pool 
+### Example 2: One defined thread pool and default thread pool
 
 An alternative configuration, rather than defining two thread pools,
 could instead define one thread pool (in this case, reporting) but also
@@ -109,7 +109,7 @@ class MyReportingFlow(private val party: Party) :
 }
 ```
 
-## Thread pool logging 
+## Thread pool logging
 
 The Corda node's startup log outputs the defined thread pools and their
 sizes; for example:
@@ -118,7 +118,7 @@ sizes; for example:
 Created flow thread pools: reporting(3), transactions(3), default(20)
 ```
 
-## Default flow-to-thread pool mapping rules 
+## Default flow-to-thread pool mapping rules
 
 How flows are mapped to thread pools depends on:
 
@@ -129,27 +129,24 @@ How flows are mapped to thread pools depends on:
 The Corda default FlowSchedulerMapper follows these rules, in order of
 highest priority first:
 
-1.  If a flow is annotated with `@FlowThreadPool("threadpoolname")` and
-    the referenced thread pool is defined in the configuration, then
-    that flow is executed in the specified pool. If the specified thread
-    pool is not present in the node configuration, then the default
-    thread pool is used instead.
+1. If a flow is annotated with `@FlowThreadPool("threadpoolname")` and
+   the referenced thread pool is defined in the configuration, then
+   that flow is executed in the specified pool. If the specified thread
+   pool is not present in the node configuration, then the default
+   thread pool is used instead.
+2. If a thread pool named `Peer-Origin` is defined, then all flows
+   started via a peer Corda node and **not** annotated with a specific
+   thread pool will be executed in that thread pool. Otherwise, such
+   flows are executed in the default thread pool.
+3. If a thread pool named `RPC-Origin` is defined, then all flows started
+   via RPC (for example, by a client application) and **not** annotated
+   with a specific thread pool will be executed in that thread pool.
+   Otherwise, such flows are executed in the default thread pool.
+4. If none of the above rules apply to a flow, then the default
+   behavior is the same as in previous versions of Corda: the flow is
+   executed in the default thread pool.
 
-2.  If a thread pool named `Peer-Origin` is defined, then all flows
-    started via a peer Corda node and **not** annotated with a specific
-    thread pool will be executed in that thread pool. Otherwise, such
-    flows are executed in the default thread pool.
-
-3.  If a thread pool named `RPC-Origin` is defined, then all flows started
-    via RPC (for example, by a client application) and **not** annotated
-    with a specific thread pool will be executed in that thread pool.
-    Otherwise, such flows are executed in the default thread pool.
-
-4.  If none of the above rules apply to a flow, then the default
-    behavior is the same as in previous versions of Corda: the flow is
-    executed in the default thread pool.
-
-## Customizing flow-to-thread pool mapping rules 
+## Customizing flow-to-thread pool mapping rules
 
 CorDapps can override the above default flow mapping logic by defining a
 class which implements the FlowSchedulerMapper interface; for example:
@@ -170,7 +167,7 @@ Corda scans CorDapps at startup time for classes implementing the
 FlowSchedulerMapper interface. Corda logs this message if it finds a
 single candidate:
 
-```
+```cmd
 Using custom flow scheduler mapper. Class {classname}
 ```
 
@@ -191,7 +188,7 @@ having the mapper in the same package as the main app would make
 installing multiple apps impossible due to multiple custom scheduler
 mappers.
 
-## Thread pool metrics 
+## Thread pool metrics
 
 The following node metric was introduced in v4.13 specifically for
 thread pools:
@@ -203,12 +200,12 @@ thread pools:
 The following metrics have now been updated to be accessible per thread
 pool name:
 
-| Previously                                     | Corda 4.13 onward                                                  |  
+| Previously                                     | Corda 4.13 onward                                                  |
 |------------------------------------------------|--------------------------------------------------------------------|
 | ActiveThreads                                  | ActiveThreads.{threadpoolname}                                     |
 | QueueSize                                      | QueueSize.{threadpoolname}                                         |
-| QueueSizeOnInsert                              | QueueSizeOnInsert.{threadpoolname}                                 |     
-| StartupQueueTime                               | StartupQueueTime.{threadpoolname}                                  | 
+| QueueSizeOnInsert                              | QueueSizeOnInsert.{threadpoolname}                                 |
+| StartupQueueTime                               | StartupQueueTime.{threadpoolname}                                  |
 | FlowDuration.{Success/Failure}.{flowclassname} | FlowDuration.{Success/Failure}.{flowclassname}.{threadpoolname}    |
 
 Metrics related to the default thread pool do not have a *.default*

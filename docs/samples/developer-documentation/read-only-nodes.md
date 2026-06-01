@@ -20,7 +20,7 @@ including the following:
 - [Making nodes real-only for scalable reporting
   solutions](#making-nodes-real-only-for-scalable-reporting-solutions)
 
-### Making nodes read-only for regulatory reasons 
+### Making nodes read-only for regulatory reasons
 
 Sometimes, you may want to configure a node on a network so that it has
 no more involvement in new transactions, but there is still a regulatory
@@ -38,7 +38,7 @@ mutate data or participate with peers but continue to perform vault
 queries or other reporting operations (read-only flows) to aid with data
 extraction or regulatory investigations.
 
-### Making nodes real-only for scalable reporting solutions 
+### Making nodes real-only for scalable reporting solutions
 
 Using a read-only node can be a way to provide the following scalable
 reporting solution.
@@ -145,7 +145,7 @@ A read-only node has the following restrictions versus normal nodes:
 
 - The Token SDK in-memory selection cannot be used.
 
-## Read-only nodes disabled functionality 
+## Read-only nodes disabled functionality
 
 Read-only nodes have the following functionalities disabled:
 
@@ -173,17 +173,16 @@ Read-only nodes have the following functionalities disabled:
 
 - Mutual exclusions
 
-## Making a node read-only 
+## Making a node read-only
 
 To make a node read-only, perform the following steps:
 
-1.  [Prepare the node database.](#prepare-the-node-database)
-2.  Then, either:
-
+1. [Prepare the node database.](#prepare-the-node-database)
+2. Then, either:
     - [Configure readOnlyMode to true](#configure-readonlymode-to-true), *or*
     - [Run the node in read-only mode from the CLI](#run-the-node-in-read-only-mode-from-cli).
 
-### Prepare the node database 
+### Prepare the node database
 
 To make a node read-only, first its database must be preinitialised.
 This preinitialization can happen when:
@@ -212,14 +211,14 @@ connection, but some database servers treat this only as a hint, and
 they do not restrict mutating operations. For example, SQL Server does
 not support this flag.
 
-### Remove node keystore and HSH keystore 
+### Remove node keystore and HSH keystore
 
 It is recommended to remove the node keystore and the related HSH
 keystore from the read-only node's configuration. A read-only node needs
 an SSL keystore whose key will be used for the internal TLS server.
 These keys may differ from the original node's SSL keys.
 
-#### Configure readOnlyMode to true 
+#### Configure readOnlyMode to true
 
 In the node configuration, set `readOnlyMode` to true as shown in the
 following example:
@@ -230,28 +229,28 @@ enterpriseConfiguration {
 }
 ```
 
-### Run the node in read-only mode from CLI 
+### Run the node in read-only mode from CLI
 
 Instead of changing the node configuration, you can start a node in
 read-only mode by using the `--readonly-mode` flag.
 
-## Read-only node output 
+## Read-only node output
 
 A read-only node will display the following line when started in
 read-only mode:
 
-```
+```cmd
 Read-only mode is set to true.
 ```
 
 Also, instead of the normal message `Running P2PMessaging loop`, the node
 displays the following message when it is ready:
 
-```
+```cmd
 Blocking main thread until stop() is called
 ```
 
-### Checking a node is read-only 
+### Checking a node is read-only
 
 The `isReadOnlyNode` RPC operation allows you to check the read-only
 status of a node. `isReadOnlyNode` returns true if the node is configured
