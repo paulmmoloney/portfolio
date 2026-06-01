@@ -66,18 +66,19 @@ nav = [
       { "Configuring Visual Studio .NET Framework Tools" = "samples/int-dev-guide/visual_studio.md" },
       { "Configuring Environment Variables" = "samples/int-dev-guide/configuring-env-variables.md"}
 	  ]},
+    { "Developer Documentation" = [
+      { "Developer Documentation" = "samples/developer-documentation/index.md" },
+      { "Read-only nodes" = "samples/developer-documentation/read-only-nodes.md" },
+      { "System flows" = "samples/developer-documentation/system-flows.md" },
+      { "Segregated threadpools" = "samples/developer-documentation/segregated-threadpools.md" }
+    ]},
     { "Portfolio Site" = [
       { "Portfolio Site" = "samples/portfolio/index.md" }
     ]},
     { "Microsoft Word Template" = [
       { "Microsoft Word Template" = "samples/word-template/index.md" }
     ]},
-    { "API Documentation" = [
-      { "API Documentation" = "samples/developer-documentation/index.md" },
-      { "Read-only nodes" = "samples/developer-documentation/read-only-nodes.md" },
-      { "System flows" = "samples/developer-documentation/system-flows.md" },
-      { "Segregated threadpools" = "samples/developer-documentation/segregated-threadpools.md" }
-    ]},
+
   ]},
 ]
 
