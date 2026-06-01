@@ -10,18 +10,18 @@ automatic ledger recovery; that is, the flow
 To configure a node to run system flows, including the automatic ledger
 recovery flow:
 
-1.  Set the Boolean parameter `runSystemFlowsAtStartup` in the
-    `enterpriseConfiguration` section of the node configuration to true.
+1. Set the Boolean parameter `runSystemFlowsAtStartup` in the
+   `enterpriseConfiguration` section of the node configuration to true.
 
-    The node will now have a system flow phase after startup, during which
-system flows are run.
+   The node will now have a system flow phase after startup, during which
+   system flows are run.
 
-2.  (Optional) A second parameter, `systemFlowsStuckSkipThreshold`, may
-    also be configured (its default is 1m). This integer parameter
-    specifies the duration that a system flow can be stuck on a
-    suspension point during the system flow phase before it is skipped.
-    Such a flow will skip up to two times: once in checkpoint system
-    flows phase, then again in startup system flows phase.
+2. (Optional) A second parameter, `systemFlowsStuckSkipThreshold`, may
+   also be configured (its default is 1m). This integer parameter
+   specifies the duration that a system flow can be stuck on a
+   suspension point during the system flow phase before it is skipped.
+   Such a flow will skip up to two times: once in checkpoint system
+   flows phase, then again in startup system flows phase.
 
 If you specify `runSystemFlowsAtStartup`, then
 EnterpriseLedgerRecoveryFlow will run at startup with default

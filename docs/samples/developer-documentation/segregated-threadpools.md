@@ -114,7 +114,7 @@ class MyReportingFlow(private val party: Party) :
 The Corda node's startup log outputs the defined thread pools and their
 sizes; for example:
 
-```
+```cmd
 Created flow thread pools: reporting(3), transactions(3), default(20)
 ```
 
