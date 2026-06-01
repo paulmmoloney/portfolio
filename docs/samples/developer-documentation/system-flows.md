@@ -73,7 +73,7 @@ sequence of actions occurs during the system flow phase:
    RPC, it will be blocked until the system flows have finished.
 7. Flows annotated with `@SystemFlow` can be started via RPC during the
    system flow phase.
-8. Once system flows have finished, a `SystemFlowsPhaseCompleted` event
+8. Once system flows have finished, an event `SystemFlowsPhaseCompleted`
    is produced, and the metric `SystemFlows.Phase` is recorded, with
    values CHECKPOINT, STARTUP and USER in this order. Note that only
    the latest metric is recorded.
