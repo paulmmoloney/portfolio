@@ -2,10 +2,12 @@ name: Portfolio
 
 on:
   push:
-    branches: [main, master]
+    branches:
+      - '**'
 
   pull_request:
-    branches: [main, master]
+    branches: [main]
+
 permissions:
   contents: read
   pages: write
@@ -141,8 +143,8 @@ jobs:
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v4
-        with:
-          path: site
+        if: github.ref == 'refs/heads/main'
 
       - uses: actions/deploy-pages@v4
+        if: github.ref == 'refs/heads/main'
         id: deployment
