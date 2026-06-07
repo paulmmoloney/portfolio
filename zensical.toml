@@ -57,21 +57,28 @@ nav = [
   { "Samples" = [
     { "Samples" = "samples/index.md" },
     { "Internal Developer Guide" = [
-      { "Overview" = "samples/dev_env/index.md" },
-      { "Requirements" = "samples/dev_env/requirements.md" },
-      { "Installing Required Windows Features" = "samples/dev_env/installing-windows-features.md" },
-      { "Configuring PowerShell" = "samples/dev_env/configuring-powershell.md" },
-      { "Installing & Configuring Elasticsearch" = "samples/dev_env/elasticsearch.md" },
-      { "Installing Logstash" = "samples/dev_env/logstash.md" },
-      { "Configuring Visual Studio .NET Framework Tools" = "samples/dev_env/visual_studio.md" },
-      { "Configuring Environment Variables" = "samples/dev_env/configuring-env-variables.md"}
+      { "Internal Developer Guide" = "samples/int-dev-guide/index.md" },
+      { "Requirements" = "samples/int-dev-guide/requirements.md" },
+      { "Installing Required Windows Features" = "samples/int-dev-guide/installing-windows-features.md" },
+      { "Configuring PowerShell" = "samples/int-dev-guide/configuring-powershell.md" },
+      { "Installing & Configuring Elasticsearch" = "samples/int-dev-guide/elasticsearch.md" },
+      { "Installing Logstash" = "samples/int-dev-guide/logstash.md" },
+      { "Configuring Visual Studio .NET Framework Tools" = "samples/int-dev-guide/visual_studio.md" },
+      { "Configuring Environment Variables" = "samples/int-dev-guide/configuring-env-variables.md"}
 	  ]},
+    { "Developer Documentation" = [
+      { "Developer Documentation" = "samples/developer-documentation/index.md" },
+      { "Read-only nodes" = "samples/developer-documentation/read-only-nodes.md" },
+      { "System flows" = "samples/developer-documentation/system-flows.md" },
+      { "Segregated threadpools" = "samples/developer-documentation/segregated-threadpools.md" }
+    ]},
     { "Portfolio Site" = [
       { "Portfolio Site" = "samples/portfolio/index.md" }
     ]},
     { "Microsoft Word Template" = [
       { "Microsoft Word Template" = "samples/word-template/index.md" }
     ]},
+
   ]},
 ]
 
@@ -233,7 +240,7 @@ features = [
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
     # https://zensical.org/docs/setup/navigation/#navigation-pruning
-    "navigation.prune",
+    # "navigation.prune",
 
     # When sections are enabled, top-level sections are rendered as groups in
     # the sidebar for viewports above 1220px, but remain as-is on mobile.
@@ -274,7 +281,7 @@ features = [
     # When navigation integration for the table of contents is enabled, it is
     # always rendered as part of the navigation sidebar on the left.
     # https://zensical.org/docs/setup/navigation/#navigation-integration
-    "toc.integrate",
+    # "toc.integrate",
 ]
 
 # ----------------------------------------------------------------------------
@@ -363,6 +370,7 @@ alternate_style = true
 [project.markdown_extensions.zensical.extensions.glightbox]
 auto_caption = true
 [project.markdown_extensions.toc]
+title = "On this page"
 permalink = true
 
 # ----------------------------------------------------------------------------
