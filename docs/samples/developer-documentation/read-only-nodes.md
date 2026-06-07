@@ -17,8 +17,8 @@ including the following:
 - [Making nodes read-only for regulatory
   reasons](#making-nodes-read-only-for-regulatory-reasons)
 
-- [Making nodes real-only for scalable reporting
-  solutions](#making-nodes-real-only-for-scalable-reporting-solutions)
+- [Making nodes read-only for scalable reporting
+  solutions](#making-nodes-read-only-for-scalable-reporting-solutions)
 
 ### Making nodes read-only for regulatory reasons
 
@@ -38,12 +38,12 @@ mutate data or participate with peers but continue to perform vault
 queries or other reporting operations (read-only flows) to aid with data
 extraction or regulatory investigations.
 
-### Making nodes real-only for scalable reporting solutions
+### Making nodes read-only for scalable reporting solutions
 
 Using a read-only node can be a way to provide the following scalable
 reporting solution.
 
-One node handles transactions while one node is dedicated to handling
+One node handles transactions while another node is dedicated to handling
 database queries for reporting purposes. The database for the reporting
 node is replicated to a read-only database replica, and the reporting
 node that queries the read-only database replica is set to be read-only.
@@ -84,51 +84,51 @@ A read-only node has the following restrictions versus normal nodes:
 
 - The following RPC operations are disabled:
 
-    - clearRPCAuditDataBefore
+    - `clearRPCAuditDataBefore`
 
-    - collectRPCAuditData
+    - `collectRPCAuditData`
 
-    - collectRPCAuditDataWithPaging
+    - `collectRPCAuditDataWithPaging`
 
-    - acceptNewNetworkParameters
+    - `acceptNewNetworkParameters`
 
-    - networkParametersFeed
+    - `networkParametersFeed`
 
-    - addVaultTransactionNote
+    - `addVaultTransactionNote`
 
-    - uploadAttachment
+    - `uploadAttachment`
 
-    - uploadAttachmentWithMetadata
+    - `uploadAttachmentWithMetadata`
 
-    - refreshNetworkMapCache
+    - `refreshNetworkMapCache`
 
-    - setFlowsDrainingModeEnabled
+    - `setFlowsDrainingModeEnabled`
 
-    - terminate (if drainingMode is true)
+    - `terminate` (if `drainingMode` is true)
 
-    - recoverFinalityFlow
+    - `recoverFinalityFlow`
 
-    - recoverFinalityFlows
+    - `recoverFinalityFlows`
 
-    - recoverAllFinalityFlows
+    - `recoverAllFinalityFlows`
 
-    - recoverFinalityFlowByTxnId
+    - `recoverFinalityFlowByTxnId`
 
-    - recoverFinalityFlowByTxnIds
+    - `recoverFinalityFlowByTxnIds`
 
-    - recoverFinalityFlowsMatching
+    - `recoverFinalityFlowsMatching`
 
-    - acknowledgeDatabaseBackup
+    - `acknowledgeDatabaseBackup`
 
-    - markAllKeysUsed
+    - `markAllKeysUsed`
 
-- The `clearNetworkMapCache operation` clears only the in-memory network
+- The `clearNetworkMapCache` operation clears only the in-memory network
   map cache, leaving the database intact. In read-only mode, the network
-  map cache's entries expire in 5 minutes to let the node pick up fresh
+  map cache's entries expire in five minutes to allow the node to pick up fresh
   information replicated into its database from live nodes, if there is
   any.
 
-- The *RPC audit functionality* writes its audit entries into the node's
+- The RPC audit functionality writes its audit entries into the node's
   logs, instead of the database. The related log entries come from
   `ReadOnlyAuditServiceImpl` class. Also, related RPC operations are
   disabled.
@@ -138,7 +138,7 @@ A read-only node has the following restrictions versus normal nodes:
 
 - The node's internal checkpoint storage has been replaced by an
   in-memory one, which does not persist. That also means that flows
-  cannot be restored, continued across restarts.
+  cannot be restored or continued across restarts.
 
 - Freshly installed CorDapps are not registered in the database, but
   only in memory.
@@ -179,7 +179,7 @@ To make a node read-only, perform the following steps:
 
 1. [Prepare the node database.](#prepare-the-node-database)
 2. Then, either:
-    - [Configure readOnlyMode to true](#configure-readonlymode-to-true), *or*
+    - [Configure `readOnlyMode` to true](#configure-readonlymode-to-true), *or*
     - [Run the node in read-only mode from the CLI](#run-the-node-in-read-only-mode-from-cli).
 
 ### Prepare the node database
@@ -189,13 +189,13 @@ This preinitialization can happen when:
 
 - Restoring the database from a backup
 - Replicating a normal node's database
-- Configuring a normal node to a read-only node while keeping its
+- Configuring a normal node to be a read-only node while keeping its
   database intact
 
 The node's network map cache in the database must have an entry matching
 the node's `myLegalName` configuration option. The previous options all
 satisfy this, assuming the read-only node's `myLegalName` stays the same
-as the original node's one.
+as the original node's.
 
 The node will not run any mutating operations on the database; however,
 the CorDapps installed by end-users may contain mutating queries. To
@@ -203,7 +203,7 @@ restrict any unintentional mutating operations, it is recommended to
 ensure the read-only state of the database by either:
 
 - Restricting the database user specified in the configuration's
-  dataSourceProperties section from having any mutating privileges, or
+  `dataSourceProperties` section from having any mutating privileges, or
 - Setting the database itself to run in read-only mode.
 
 The Corda node will turn on the `readOnly` property of the database
@@ -218,7 +218,7 @@ keystore from the read-only node's configuration. A read-only node needs
 an SSL keystore whose key will be used for the internal TLS server.
 These keys may differ from the original node's SSL keys.
 
-#### Configure readOnlyMode to true
+#### Configure `readOnlyMode` to true
 
 In the node configuration, set `readOnlyMode` to true as shown in the
 following example:

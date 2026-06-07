@@ -13,7 +13,7 @@ recovery flow:
 1. Set the Boolean parameter `runSystemFlowsAtStartup` in the
    `enterpriseConfiguration` section of the node configuration to true.
 
-   The node will now have a system flow phase after startup, during which
+    The node will now have a system flow phase after startup, during which
    system flows are run.
 
 2. (Optional) A second parameter, `systemFlowsStuckSkipThreshold`, may
@@ -27,10 +27,10 @@ If you specify `runSystemFlowsAtStartup`, then
 EnterpriseLedgerRecoveryFlow will run at startup with default
 parameters, which means recovery will be attempted from all the nodes in
 the network map. It is possible to override this with your own system
-flow that invokes the EnterpriseLedgerRecovery flow where you can then
+flow that invokes the EnterpriseLedgerRecoveryFlow where you can then
 specify your own parameters. This is done via the system flow `supersedes`
-property. This is used with the fully qualified name of the flow we want
-to replace at startup: then, the flow with the annotation will instead
+property. This is used with the fully qualified name of the flow you want
+to replace at startup. Then the flow with the annotation will instead
 run in its place.
 
 For example, the following example shows how the existing system flow
@@ -38,10 +38,10 @@ EnterpriseLedgerRecoveryFlow could be superseded by
 MyCustomEnterpriseLedgerRecoveryFlow:
 
 ```kotlin
-@SystemFlow(supersedes=\"net.corda.node.internal.aliasing.flows.EnterpriseLedgerRecoveryFlow\")
+@SystemFlow(supersedes="net.corda.node.internal.aliasing.flows.EnterpriseLedgerRecoveryFlow")
 @StartableByRpc
 @InitiatingFlow
-class MyCustomEnterpriseLedgerRecoveryFlow : FlowLogic\<Unit\>() {
+class MyCustomEnterpriseLedgerRecoveryFlow : FlowLogic<Unit>() {
   @Suspendable
   override fun call() {
   // does something else and/or call EnterpriseLedgerRecovery with specific parameters

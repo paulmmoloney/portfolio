@@ -3,7 +3,7 @@
 Corda Enterprise executes flows in **thread pools**. A thread pool is a
 group of pre-created, idle threads, ready to execute tasks. The default
 Corda Enterprise configuration creates a single thread pool, whose size
-is configured by the flowThreadPoolSize parameter.
+is configured by the `flowThreadPoolSize` parameter.
 
 **Note:** Open Source Corda is single-threaded.
 
@@ -25,10 +25,10 @@ is performing badly and has a big queue.
 ## Configuring thread pools
 
 Thread pools are defined in the node configuration by adding an
-additionalFlowThreadPools array within the tuning object. The
-additionalFlowThreadPools array can contain one or more objects, each
+`additionalFlowThreadPools` array within the tuning object. The
+`additionalFlowThreadPools` array can contain one or more objects, each
 specifying the details of an additional thread pool. Each object
-contains a threadpool and size property, respectively defining the name
+contains a thread pool and size property, respectively defining the name
 of the thread pool and its size in number of threads.
 
 ### Example 1: Two defined thread pools
@@ -39,18 +39,18 @@ threads:
 
 ```groovy
 enterpriseConfiguration {
-    tuning {
-        additionalFlowThreadPools= [
-            {
-                threadPool=reporting,
-                size=3
-            },
-            {
-                threadPool=transactions,
-                size=3
-            },
-        ]
-    }
+  tuning {
+     additionalFlowThreadPools= [
+      {
+        threadPool=reporting,
+        size=3
+      },
+      {
+        threadPool=transactions,
+        size=3
+      },
+    ]
+  }
 }
 ```
 
@@ -60,7 +60,7 @@ annotated accordingly with the thread pool name:
 ```groovy
 @FlowThreadPool("reporting")
 class MyReportingFlow(private val party: Party) :
-            FlowLogic<Unit>() {
+  FlowLogic<Unit>() {
 ...
 }
 ```
@@ -70,7 +70,7 @@ and
 ```groovy
 @FlowThreadPool("transactions")
 class MyTransactionFlow(private val party: Party) :
-            FlowLogic<Unit>() {
+  FlowLogic<Unit>() {
 ...
 }
 ```
@@ -79,22 +79,22 @@ class MyTransactionFlow(private val party: Party) :
 
 An alternative configuration, rather than defining two thread pools,
 could instead define one thread pool (in this case, reporting) but also
-use the default thread pool, defining its size using flowThreadPoolSize.
+use the default thread pool, defining its size using `flowThreadPoolSize`.
 As in previous versions of Corda, the size of the default thread pool
-(name: "default") is still specified by the *flowThreadPoolSize*
+(name: "default") is still specified by the `flowThreadPoolSize`
 parameter.
 
 ```groovy
 enterpriseConfiguration {
-    tuning {
-        flowThreadPoolSize = 3,
-        additionalFlowThreadPools= [
-            {
-                threadPool=reporting,
-                size=3
-            },
-        ]
-    }
+  tuning {
+    flowThreadPoolSize = 3,
+    additionalFlowThreadPools= [
+      {
+        threadPool=reporting,
+        size=3
+      },
+    ]
+  }
 }
 ```
 
@@ -102,9 +102,9 @@ Only the flows related to reporting then need to be annotated
 accordingly:
 
 ```groovy
-@FlowThredPool("reporting")
+@FlowThreadPool("reporting")
 class MyReportingFlow(private val party: Party) :
-            FlowLogic<Unit>() {
+  FlowLogic<Unit>() {
 ...
 }
 ```
@@ -175,7 +175,7 @@ If it has a constructor which accepts a set of Strings, it will use that
 class as a flow mapper. Corda aborts with an exception if:
 
 - There is more than one class, or
-- There are no matching constructors.
+- There are no matching constructors
 
 FlowSchedulerMapper constructors get the set of available additional
 thread pool names as an argument. Its `getScheduler` method is called
