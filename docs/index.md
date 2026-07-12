@@ -8,7 +8,7 @@ hide:
 
 ![Profile photo](profilepic.jpg){ width="200" align=left }
 
-Welcome to my portfolio site. Here I collect some of my writing samples from my career on a site which itself shows how I can publish material using Docs-as-Code methodology using a static site generator.
+Welcome to my portfolio site. Here, I have collected some writing samples from my career on a website which itself demonstrates publishing content following Docs-as-Code methodology using the Zensical static site generator.
 
 <div class="grid cards" markdown>
 
